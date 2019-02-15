@@ -1,10 +1,11 @@
 
 
-  <div class="banner" >
-  <div class="container">
+  <div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)),
+           url('<%= image_path("fondecran.jpg")%>')" >
+  <div class="container" >
     <h1>  <strong> Amazing Cocktails by El Chaboche</strong></h1>
     <p>Change your life and learn to make cocktails</p>
-    <a class="btn btn-flat" href="#">Apply now</a>
+    <a class="btn btn-success" href="#">Apply now</a>
   </div>
 
 
@@ -22,7 +23,7 @@
       <% else %>
           <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)),
            url('<%= image_path("moscou.jpg")%>')">
-            <%= link_to cocktail.name, cocktail_path(cocktail.id)  %>
+            <%= link_to cocktail.name, cocktail_path(cocktail.id) , class:"cokname" %>
           </div>
       <% end %>
       </div>

@@ -7,7 +7,8 @@
       <p> Here are all the  ingredients and doses : </p>
       <ul>
         <% @cocktail.doses.each do |l| %>
-          <li> <%= l.description %> : <strong> <%= l.ingredient.name %> </strong> <%= link_to 'delete', dose_path(@cocktail.id) , method: :delete, data: { confirm: 'Are you sure?' } %> </li>
+          <li> <%= l.description %> : <strong> <%= l.ingredient.name %> </strong>
+          </li>
         <% end %>
       </ul>
       <br>
@@ -16,7 +17,7 @@
     </div>
     <div class="col-xs-6">
       <%=  cl_image_tag @cocktail.photo, height: 300, width: 400, crop: :fill %>
-    </div> -->
+    </div>
 
     <br>
     <%= link_to 'back', cocktails_path, class: "btn btn-danger" %>
