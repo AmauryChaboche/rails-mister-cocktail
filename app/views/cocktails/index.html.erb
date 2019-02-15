@@ -14,8 +14,8 @@
   <div class="row">
     <% @cocktails.each do |cocktail| %>
       <div class="col-xs-4">
-        <div class="card" >
-     <!--    style="background-image: url(<#%= image_path "moscou" %>); background-size: cover"  -->
+        <div class="card" style="background-image: url(<#%= image_path "moscou" %>); background-size: cover" >
+
 
           <%= link_to cocktail.name, cocktail_path(cocktail.id)  %>
         </div>
