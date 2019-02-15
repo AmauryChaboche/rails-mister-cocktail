@@ -1,0 +1,26 @@
+
+
+<div class="container">
+  <div class="row">
+    <div class="col-xs-6">
+      <h3> <%= @cocktail.name %> </h3>
+      <p> Here are all the  ingredients and doses : </p>
+      <ul>
+        <% @cocktail.doses.each do |l| %>
+          <li> <%= l.description %> : <strong> <%= l.ingredient.name %> </strong> <%= link_to 'delete', dose_path(@cocktail.id) , method: :delete, data: { confirm: 'Are you sure?' } %> </li>
+        <% end %>
+      </ul>
+      <br>
+      <%= link_to 'Add a dose to the cocktail', new_cocktail_dose_path(@cocktail.id), class: "btn btn-success"  %>
+      <br>
+    </div>
+      <div class="col-xs-6">
+        <%= image_tag "moscoumule", alt: "alttext", width: "400px" %>
+    </div>
+
+    <br>
+    <%= link_to 'back', cocktails_path, class: "btn btn-danger" %>
+
+  </div>
+</div>
+

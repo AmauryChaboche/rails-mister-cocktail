@@ -1,0 +1,27 @@
+
+
+  <div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(https://ik.imagekit.io/stapleaffiliates/liquoronline/assets/images/uploads/2017/flaming-lamborghini-cocktail-recipe.jpg);">
+  <div class="container">
+    <h1>  <strong> Amazing Cocktails by El Chaboche</strong></h1>
+    <p>Change your life and learn to make cocktails</p>
+    <a class="btn btn-flat" href="#">Apply now</a>
+  </div>
+
+
+</div>
+<div class="container">
+
+  <div class="row">
+    <% @cocktails.each do |cocktail| %>
+      <div class="col-xs-4">
+        <div class="card" style="background-image: url(<%= image_path "moscou" %>); background-size: cover"  >
+
+          <%= link_to cocktail.name, cocktail_path(cocktail.id)  %>
+        </div>
+      </div>
+    <% end %>
+
+  </div>
+
+</div>
+
