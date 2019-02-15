@@ -24,7 +24,10 @@
   }
 }
 
-
+.aie {
+  padding-right: 30px;
+  text-decoration:none;
+}
 
 .image {
   background-image: cover;
@@ -81,3 +84,40 @@
 .footer .fa-heart {
   color: #D23333;
 }
+
+
+
+.navbar-lewagon {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: white;
+  padding: 16px 24px;
+}
+
+.navbar-lewagon .brand {
+  width: 40px;
+}
+
+.navbar-lewagon .navbar-lewagon-actions {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-lewagon .navbar-lewagon-actions .navbar-lewagon-link {
+  margin-left: 24px;
+  color: #999999;
+}
+.navbar-lewagon .navbar-lewagon-actions .navbar-lewagon-link:hover {
+  color: #151515;
+}
+
+
+.navbar-lewagon .navbar-lewagon-actions .avatar {
+  margin-left: 24px;
+}
+
+.navbar-lewagon .dropdown-toggle {
+  cursor: pointer;
+}
+
