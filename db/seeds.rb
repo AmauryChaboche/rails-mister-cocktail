@@ -27,4 +27,3 @@ end
 Cocktail.create(name: "Ti punch")
 Cocktail.create(name: "Daiquiri")
 Cocktail.create(name: "Punch coco")
-
