@@ -14,8 +14,8 @@
       <%= link_to 'Add a dose to the cocktail', new_cocktail_dose_path(@cocktail.id), class: "btn btn-success"  %>
       <br>
     </div>
-    <!--   <div class="col-xs-6">
-        <#%= image_tag "moscoumule", alt: "alttext", width: "400px" %>
+    <div class="col-xs-6">
+      <%=  cl_image_tag @cocktail.photo, height: 300, width: 400, crop: :fill %>
     </div> -->
 
     <br>
