@@ -191,6 +191,8 @@ GEM
     sassc (2.0.0)
       ffi (~> 1.9.6)
       rake
+    seeuletter (1.1.0)
+      rest-client (>= 1.8, < 3.0)
     simple_form (4.1.0)
       actionpack (>= 5.0)
       activemodel (>= 5.0)
@@ -253,6 +255,7 @@ DEPENDENCIES
   rails-controller-testing
   rspec-rails
   sass-rails (~> 5.0)
+  seeuletter
   simple_form
   spring
   spring-watcher-listen (~> 2.0.0)

@@ -8,4 +8,6 @@ Rails.application.routes.draw do
   end
   resources :doses, only: [:destroy]
   root to: 'cocktails#index'
+
+  get 'letter', to: 'cocktails#letter'
 end
